@@ -1,6 +1,6 @@
 from flask import request, Flask, jsonify
 from flask_marshmallow import Marshmallow
-import UUID
+from sqlalchemy.dialects.postgresql import UUID
 
 from models.app_users import AppUsers, users_schema, user_schema
 from models.organizations import Organizations, organizations_schema
